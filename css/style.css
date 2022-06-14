@@ -82,7 +82,6 @@ padding: 0 25px;
 }
 
 
-/*
 @media screen and (max-width: 800px) {
 
 .navbar{
@@ -90,11 +89,15 @@ padding: 0 25px;
 }
 
 .nav-list li a{
-    font-size: 50px;
+    font-size: 20px;
+}
+
+.nav-list li{
+    padding: 0 5px;
 }
 
 }
-*/
+
 
 
 /* header section */
@@ -103,13 +106,19 @@ p {
     font-family: 'Questrial', sans-serif;
 }
 h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #d4cefb;
     font-size: 60px;
     margin-top: 200px;
     text-align: center;
-    
 }
 .heading-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     color: #d4cefb;
     margin-top: 10px;
     font-size: 60px;
@@ -125,21 +134,22 @@ h2{
     letter-spacing: 2px;
 }
 
-/*
+
 
 @media screen and (max-width: 800px){
 
     h1{
-        font-size: 80px;
+        font-size: 30px;
+        margin-top: 100px;
     }
 
     .heading-text{
-        font-size: 80px;
+        font-size: 30px;
 
     }
 
 }
-*/
+
 
 
 /* avail date section */
@@ -157,7 +167,6 @@ h2{
     display: flex;
     justify-content: center;
     align-items: baseline;
-    min-width: 600px;
 }
 
 .date-container .avail{
@@ -168,18 +177,18 @@ h2{
 
 }
 
-/*
+
 @media screen and (max-width: 800px){
 
 #date{
-    font-size: 60px;
+    font-size: 20px;
 }
 
 .date-container .avail{
-    font-size: 40px;
+    font-size: 16px;
 }
 }
-*/
+
 
 /* about section */
 
@@ -187,7 +196,7 @@ h2{
     line-height: 26px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    width: 480px;
+    max-width: 480px;
 }
 
 .about-me{
@@ -206,13 +215,12 @@ h2{
     flex-wrap: wrap;
     padding-top: 300px;
     margin-top: 100px;
-    height: auto;
     margin-bottom: 150px;
 }
 
 #about img{
-    width: 288px;
-    height: 360px;
+    max-width: 288px;
+    max-height: 360px;
     border-radius: 50px;
 }
 
@@ -225,6 +233,47 @@ h2{
     flex-direction: column;
     justify-content: center;
     padding-left: 50px;
+}
+
+@media screen and (max-width: 800px){
+    #about-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 150px;
+    }
+
+    .about-me #about{
+        align-self: center;
+    }
+
+    .about-me{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me p{
+        width: 75%;
+        text-align: center;
+    }
+
+    .about-head{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .about-flex{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .about-flex .about-text{
+        align-self: center;
+    }
 }
 
 
@@ -261,8 +310,8 @@ justify-content: center;
 }
 
 .project-links img{
-    width: 400px;
-    height: 250px;
+    max-width: 400px;
+    max-height: 250px;
     border: 2px solid #d4cefb;
 }
 
@@ -298,6 +347,13 @@ justify-content: center;
 .img_wrap:hover .image-desc{
     visibility: visible;
     opacity: 1;
+}
+
+@media screen and (max-width: 800px){
+
+    .project-links img{
+        width: 300px;
+    }
 }
 
 

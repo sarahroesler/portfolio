@@ -82,7 +82,7 @@ padding: 0 25px;
 }
 
 
-
+/*
 @media screen and (max-width: 800px) {
 
 .navbar{
@@ -94,6 +94,7 @@ padding: 0 25px;
 }
 
 }
+*/
 
 
 /* header section */
@@ -124,6 +125,8 @@ h2{
     letter-spacing: 2px;
 }
 
+/*
+
 @media screen and (max-width: 800px){
 
     h1{
@@ -136,6 +139,7 @@ h2{
     }
 
 }
+*/
 
 
 /* avail date section */
@@ -163,6 +167,8 @@ h2{
     font-style: italic;
 
 }
+
+/*
 @media screen and (max-width: 800px){
 
 #date{
@@ -173,6 +179,7 @@ h2{
     font-size: 40px;
 }
 }
+*/
 
 /* about section */
 

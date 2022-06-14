@@ -82,6 +82,20 @@ padding: 0 25px;
 }
 
 
+
+@media only screen and (max-width: 800px) {
+
+.navbar{
+    justify-content: center;
+}
+
+.nav-list li a{
+    font-size: 50px;
+}
+
+}
+
+
 /* header section */
 
 p {
@@ -225,7 +239,7 @@ justify-content: center;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
-    margin-bottom: 400px;
+    margin-bottom: 300px;
 }
 .img_wrap{
     position: relative;

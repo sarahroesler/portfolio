@@ -93,11 +93,10 @@ padding: 0 25px;
 }
 
 .nav-list li{
-    padding: 0 8px;
+    padding: 0 10px;
 }
 
 }
-
 
 
 /* header section */
@@ -139,12 +138,13 @@ h2{
 @media screen and (max-width: 800px){
 
     h1{
-        font-size: 30px;
-        margin-top: 100px;
+        font-size: 45px;
+        margin-top: 140px;
     }
 
     .heading-text{
-        font-size: 30px;
+        font-size: 45px;
+        margin: 10px 2px;
 
     }
 
@@ -182,6 +182,7 @@ h2{
 
 #date{
     font-size: 20px;
+    margin-top: 30px;
 }
 
 .date-container .avail{
@@ -240,7 +241,8 @@ h2{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 150px;
+        margin-top: 220px;
+        padding-top: 0;
     }
 
     .about-me #about{
@@ -269,6 +271,7 @@ h2{
         display: flex;
         justify-content: center;
         padding: 0;
+        margin-top: 10px;
     }
 
     .about-flex .about-text{
@@ -298,7 +301,7 @@ h2{
     bottom: 20px;
     width: 50px;
     height: 50px;
-z-index: 9999;
+    z-index: 9999;
 }
 
 @media screen and (max-width: 800px){
@@ -306,6 +309,7 @@ z-index: 9999;
     #btnScrollToTop{
         width: 50px;
         height: 50px;
+        visibility: visible;
     }
 
     #btnScrollToTop img{
@@ -319,8 +323,8 @@ z-index: 9999;
 .project-links{
     display: flex;
     flex-wrap: wrap;
-margin: 50px 20px;
 justify-content: center;
+margin-top: 80px;
 }
 
 .project-links img{
@@ -338,8 +342,8 @@ justify-content: center;
 }
 .img_wrap{
     position: relative;
-    width: 400px;
-    height: 250px;
+    max-width: 400px;
+    max-height: 250px;
     margin: 5px 5px;
 }
 
@@ -368,6 +372,19 @@ justify-content: center;
     .project-links img{
         width: 300px;
     }
+
+    .project-links{
+        margin-top: 30px;
+    }
+
+    .img-wrap{
+        width: 300px;
+    }
+
+    #projects{
+        padding-top: 50px;
+        margin-bottom: 100px;
+    }
 }
 
 
@@ -386,19 +403,20 @@ justify-content: center;
 }
 
 #skills p{
-    padding: 30px;
     color:#6f45f9;
 }
 
-.background{
-    background-color: black;
-    margin-top: 200px;
+.center{
+    display: flex;
+    padding: 0 20px;
 }
+
 
 #skills img{
     width: 40px;
     height: 40px;
     background-color: #d4cefb;
+    margin: 0 8px;
 }
 
 #skills img:last-child{
@@ -417,6 +435,27 @@ justify-content: center;
     width: 40px;
     height: 40px;
     padding: 3.5px 3px;
+}
+
+@media screen and (max-width: 800px){
+#skills{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-image: none;
+}
+
+.skill-list{
+    align-items: flex-start;
+}
+
+#skills p{
+    color:#edeafb;
+}
+
+.skill-list .center{
+    padding: 15px 15px;
+}
+
 }
 
 /* footer contact section */

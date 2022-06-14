@@ -124,6 +124,19 @@ h2{
     letter-spacing: 2px;
 }
 
+@media only screen and (max-width: 800px){
+
+    h1{
+        font-size: 80px;
+    }
+
+    .heading-text{
+        font-size: 80px;
+
+    }
+
+}
+
 
 /* avail date section */
 
@@ -140,6 +153,7 @@ h2{
     display: flex;
     justify-content: center;
     align-items: baseline;
+    min-width: 600px;
 }
 
 .date-container .avail{
@@ -147,6 +161,17 @@ h2{
     color: #ff6e00;
     padding-left: 10px;
     font-style: italic;
+
+}
+@media only screen and (max-width: 800px){
+
+#date{
+    font-size: 60px;
+}
+
+.date-container .avail{
+    font-size: 40px;
+}
 }
 
 /* about section */

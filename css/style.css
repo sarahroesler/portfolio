@@ -1,0 +1,385 @@
+@font-face {
+    font-family: 'Noto-Serif-Display-SemiCondensed-Light';
+    src:url('../fonts/Noto-Serif-Display-SemiCondensed-Light.ttf.woff') format('woff'),
+        url('../fonts/Noto-Serif-Display-SemiCondensed-Light.ttf.svg') format('svg'),
+        url('../fonts/Noto-Serif-Display-SemiCondensed-Light.ttf.eot'), 
+        url('../fonts/Noto-Serif-Display-SemiCondensed-Light.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    color: #FAF9F6;
+}
+
+
+body {
+    background-image: url('../images/background-2.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation */
+
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    
+}
+.navbar{
+top: 0;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+padding: 20px 15px;
+z-index: 100;
+width: 100%;
+}
+
+.nav-list li{
+display: inline-block;
+padding: 0 25px;
+}
+
+.nav-list ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-list li a{
+    display: block;
+    color: #FAF9F6;
+    font-size: 36px;
+    font-family: 'Questrial', sans-serif;
+}
+
+.nav-list a{
+    transition: all 0.5s;
+}
+
+
+.nav-list a:hover{
+    color:#ff6e00;
+    
+}
+
+.nav-list a:active{
+    border-bottom: 2px solid #ff6e00;
+}
+
+
+/* header section */
+
+p {
+    font-family: 'Questrial', sans-serif;
+}
+h1{
+    color: #d4cefb;
+    font-size: 60px;
+    margin-top: 200px;
+    text-align: center;
+    
+}
+.heading-text{
+    color: #d4cefb;
+    margin-top: 10px;
+    font-size: 60px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: #d4cefb;
+    letter-spacing: 2px;
+}
+
+
+/* avail date section */
+
+#date{
+    color: #ff6e00;
+    letter-spacing: 2px;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+
+.date-container{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.date-container .avail{
+    font-size: 20px;
+    color: #ff6e00;
+    padding-left: 10px;
+    font-style: italic;
+}
+
+/* about section */
+
+.about-me p{
+    line-height: 26px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    width: 480px;
+}
+
+.about-me{
+    display: flex;
+    align-items: center;
+}
+
+.about-me .about-text{
+    font-size: 20px;
+}
+
+#about-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 300px;
+    margin-top: 100px;
+    height: auto;
+    margin-bottom: 150px;
+}
+
+#about img{
+    width: 288px;
+    height: 360px;
+    border-radius: 50px;
+}
+
+.about-head{
+    padding-bottom: 60px;
+}
+
+.about-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+
+/* up button */
+
+#btnScrollToTop{
+    border-radius: 50%;
+    position: fixed;
+    right: 18px;
+    bottom: 20px;
+    width: 65px;
+    height: 65px;
+    background: rgba(0, 0, 0, 0.766);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#btnScrollToTop img{
+    right: 18px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+
+}
+
+/* project section */
+
+.project-links{
+    display: flex;
+    flex-wrap: wrap;
+margin: 50px 20px;
+justify-content: center;
+}
+
+.project-links img{
+    width: 400px;
+    height: 250px;
+    border: 2px solid #d4cefb;
+}
+
+#projects{
+    padding-top: 200px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin-bottom: 400px;
+}
+.img_wrap{
+    position: relative;
+    width: 400px;
+    height: 250px;
+    margin: 5px 5px;
+}
+
+
+.image-desc{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    color: #FAF9F6;
+    background: rgba(28, 30, 31, 0.82);
+    padding-top: 100px;
+    transition: all 0.5s;
+}
+
+.img_wrap:hover .image-desc{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/* skills sections */
+
+#skills{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    background-image: url('../images/skills.jpg');
+    background-size: 100%;
+    background-position: center;
+    padding-bottom: 400px;
+    padding-top: 100px;
+    background-repeat: no-repeat;
+}
+
+#skills p{
+    padding: 30px;
+    color:#6f45f9;
+}
+
+.background{
+    background-color: black;
+    margin-top: 200px;
+}
+
+#skills img{
+    width: 40px;
+    height: 40px;
+    background-color: #d4cefb;
+}
+
+#skills img:last-child{
+    padding: 1px;
+}
+
+.skill-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+#skills .bigger{
+    width: 40px;
+    height: 40px;
+    padding: 3.5px 3px;
+}
+
+/* footer contact section */
+
+#contact{
+    padding-bottom: 50px;
+    background-color: #edeafb;
+}
+
+.contact-text{
+    color: #ff6e00;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    padding-top: 80px;
+}
+
+.email{
+    border: 2px solid black;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 30px;
+    color:black;
+    padding: 15px;
+    background-color: #d4cefb;
+}
+.email-button{
+    display: flex;
+    justify-content: center;
+    margin: 80px 0 120px 0;
+}
+
+.email:hover{
+    background-color: #ff6e00;
+}
+.line{
+    width: 135px;
+    height: 4px;
+    background-color: #d4cefb;
+    margin-top: 10px;
+}
+
+.contact-line{
+    background-color: black;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    border-top: 1px solid #d4cefb;
+}
+
+.links a{
+    padding: 30px 20px;
+    color: #ff6e00;
+    font-size: 20px;
+}
+
+.copyright p{
+    padding-top: 5px;
+    color: black;
+    text-align: center;
+    font-size: 16px;
+}
+
+.links img{
+    width: 50px;
+    height: 50px;
+}
+
+.links img:hover{
+    opacity: .6;
+}
+

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>Sarah Roesler | Web Developer | Portfolio</title>
+  </head>
+  <body>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="#about-container">About</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    <button id="btnScrollToTop"><img src="./images/up.png"></button>
+<h1>Hi, I'm Sarah Roesler.</h1>
+<h2 class="heading-text">I am a Texas based Web Developer.</h2>
+<div class="date-container">
+  <span id="date"></span>
+  <p class="avail">Available for Work</p>
+</div>
+<div id = "about-container">
+  <div class="about-me">
+    <div id = "about">
+      <img src="./images/IMG_6432.JPG">
+      </div>
+      <div class="about-flex">
+        <div class="about-head">
+      <h2>About Me</h2>
+     <div class="line"></div>
+     </div>
+    <p class="about-text">Hello! My name is Sarah and I am a Front-End Developer in Dallas, Texas. <br><br>
+      My interest in Web Developement started in 2018 and I finally moved to 
+      Dallas from NYC in 2022 to pursue coding full-time.</p>
+      </div>
+  </div>
+</div>
+<div id="projects">
+  <div class="flex">
+    <h2>PROJECTS</h2>
+   <div class="line"></div>
+   </div>
+<div class="project-links">
+  <div class="img_wrap">
+    <img src="./images/pop-architecture.png">
+    <a href="https://sarahroesler.github.io" target="_blank" class="image-desc">Pop Architecture</a>
+  </div>
+  <div class="img_wrap">
+    <img src="./images/pop-architecture.png">
+    <a href="https://sarahroesler.github.io" target="_blank" class="image-desc">Pop Architecture</a>
+  </div>
+  <div class="img_wrap">
+  <img src="./images/pop-architecture.png">
+  <a href="https://sarahroesler.github.io" target="_blank" class="image-desc">Pop Architecture</a>
+  </div>
+</div>
+</div>
+<div class="background">
+<div id="skills">
+  <div class="flex">
+    <h2>SKILLS</h2>
+   <div class="line"></div>
+   </div>
+   <div class="skill-list">
+      <img src="./images/html.png">
+      <p>HTML</p>
+      <img src="./images/css-3.png" class="bigger">
+      <p>CSS</p>
+      <img src="./images/javascript.png">
+      <p>JavaScript </p>
+      <img src="./images/git.png">
+      <p>Git</p>
+      <img src="./images/react.png">
+      <p>React</p>
+      
+    </div>
+  </div>
+</div>
+<footer id="contact">
+  <svg preserveAspectRatio="none" viewBox = "0 0 100 102" height="75" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+    <path d="M0 0 L50 100 L100 0 Z" fill="black" stroke="black" opacity="1"></path>
+  </svg>
+  <div class="flex">
+  <h2 class="contact-text">CONTACT</h2>
+ <div class="line contact-line"></div>
+ </div>
+ <div class="email-button">
+  <a href="mailto:sarah_roeslser@yahoo.com" target="_blank" class ="email">Email Me!</a>
+  </div>
+  <div class="links">
+  <a href="https://www.linkedin.com/in/sarahroesler" target="_blank"><img src="./images/linkedin.png"></a>
+  <a href="https://github.com/sarahroesler" target="_blank"><img src="./images/github.png"></a>
+  <a href="https://www.instagram.com/sarahroeslerr/?hl=en" target="_blank"><img src="./images/instagram.png"></a>
+  </div>
+  <div class="copyright">
+    <p>© 2022 by Sarah Roesler</p>
+  </div>
+</footer>
+
+<script>
+  const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+  btnScrollToTop.addEventListener("click", function () {
+    window.scrollTo(0, 0);
+  })
+</script>
+
+<script>
+  const date = document.getElementById("date");
+  const currentDate = new Date();
+  const month = currentDate.getMonth() + 1;
+  const monthName = currentDate.toLocaleString('en-US', {month: 'long'});
+  const day = currentDate.getDate();
+  const fullDate = monthName + '  ' + day;
+
+  date.innerHTML = fullDate;
+  </script>
+
+  </body>
+
+
+</html>

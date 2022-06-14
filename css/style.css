@@ -89,11 +89,11 @@ padding: 0 25px;
 }
 
 .nav-list li a{
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .nav-list li{
-    padding: 0 5px;
+    padding: 0 8px;
 }
 
 }
@@ -290,6 +290,7 @@ h2{
     border: none;
     outline: none;
     cursor: pointer;
+    z-index: 9999;
 }
 
 #btnScrollToTop img{
@@ -297,7 +298,20 @@ h2{
     bottom: 20px;
     width: 50px;
     height: 50px;
+z-index: 9999;
+}
 
+@media screen and (max-width: 800px){
+
+    #btnScrollToTop{
+        width: 50px;
+        height: 50px;
+    }
+
+    #btnScrollToTop img{
+        width: 35px;
+        height: 35px;
+    }
 }
 
 /* project section */

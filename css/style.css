@@ -116,6 +116,7 @@ h1{
     font-size: 60px;
     margin-top: 200px;
     text-align: center;
+    animation: slideMe .4s ease-in;
 }
 .heading-text{
     display: flex;
@@ -128,13 +129,53 @@ h1{
     margin-bottom: 50px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    animation: slideMe .8s ease-in;
 }
+
 
 h2{
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     color: #d4cefb;
     letter-spacing: 2px;
+}
+
+@keyframes slideMe{
+0%{
+    transform: skewX(53deg) translateX(-500px);
+    opacity: 0;
+}
+
+60%{
+    transform: translateX(0px);
+}
+62%{
+    transform: skewX(0deg) translateX(30px);
+}
+70%{
+    transform: skew(-20deg);
+    opacity: 1;
+}
+80%{
+    transform: skew(0deg) translate(0);
+}
+90%{
+    transform: skew(-5deg);
+}
+100%{
+    transform: skew(0deg);
+}
+}
+
+@keyframes slide-up{
+    0%{
+        opacity: .1;
+        line-height: 800px;;
+    }
+    100%{
+        opacity: 1;
+        line-height: 0px;
+    }
 }
 
 
@@ -171,6 +212,7 @@ h2{
     display: flex;
     justify-content: center;
     align-items: baseline;
+    animation: slide-up .8s ease-in;
 }
 
 .date-container .avail{

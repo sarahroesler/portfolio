@@ -374,8 +374,8 @@ margin-top: 80px;
 }
 
 .project-links img{
-    max-width: 400px;
-    max-height: 250px;
+    width: 400px;
+    height: 250px;
     border: 2px solid #d4cefb;
 }
 

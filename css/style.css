@@ -18,6 +18,7 @@ html {
 
 body {
     background-image: url('../images/background-2.jpg');
+
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: black;
@@ -65,17 +66,27 @@ a {
 .nav-list li a {
     display: block;
     color: #FAF9F6;
+    /* color: #ffd45c; */
     font-size: 36px;
-    font-family: 'Questrial', sans-serif;
+    /* font-family: 'Questrial', sans-serif; */
+    font-family: 'Sora', sans-serif;
+    /* border-bottom: 2px solid #d04cf9; */
+    padding: 0px 5px;
+    /* border-radius: 10px; */
 }
 
 .nav-list a {
-    transition: all 0.5s;
+    transition: all 200ms;
 }
 
 
 .nav-list a:hover {
-    color: #ff6e00;
+    /* color: #ff6e00; */
+    /* border-color: #fdff87; */
+    /* color: #6f45f9; */
+    border-bottom: 2px solid #fdff7a;
+    color: #dc69fe;
+    box-shadow: 0 0.5em 0.5em -0.4em #fdff7a;
 
 }
 
@@ -94,10 +105,10 @@ a {
     }
 
     .nav-list li a {
-        font-size: 26px;
+        font-size: 22px;
         margin: 15px 2px;
-        border-bottom: 1px solid #ff6e00;
-        padding-bottom: 3px;
+        border-bottom: 1px solid #dc69fe;
+        padding: 0 0 3px 0;
         letter-spacing: 3;
 
     }
@@ -121,32 +132,52 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #d4cefb;
-    font-size: 60px;
-    margin-top: 200px;
+    color: #47FCA1;
+    font-size: 70px;
+    margin-top: 180px;
     text-align: center;
     animation: slideMe .4s ease-in;
+    /* font-family: 'Raleway', sans-serif; */
+    letter-spacing: 2px;
+    font-family: 'Spectral', serif;
+    /* background-image: linear-gradient(60deg, #E21143, #FFB03A); */
+    /* background-image: linear-gradient(140deg, #76d4ff, #b91ee9); */
+    background-image: linear-gradient(90deg, #f3f700, #b91ee9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 .heading-text {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #d4cefb;
+    color: #47FCA1;
     margin-top: 10px;
-    font-size: 60px;
+    font-size: 70px;
     margin-bottom: 50px;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Raleway', sans-serif; */
     text-align: center;
     animation: slideMe .8s ease-in;
+    letter-spacing: 2px;
+    font-family: 'Spectral', serif;
+    text-transform: none;
+    background-image: linear-gradient(90deg, #f3f700, #b91ee9);
+    /* background-image: linear-gradient(60deg, #E21143, #FFB03A); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 
 h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Spectral', serif;
     font-size: 40px;
     color: #d4cefb;
     letter-spacing: 2px;
+    text-transform: uppercase;
+
 }
 
 @keyframes slideMe {
@@ -200,16 +231,19 @@ h2 {
 @media screen and (max-width: 800px) {
 
     h1 {
-        font-size: 40px;
+        font-size: 45px;
         margin-top: 60px;
         padding: 0 2px;
+        line-height: 1.2;
+
 
     }
 
     .heading-text {
-        font-size: 40px;
+        font-size: 45px;
         margin: 10px 2px;
         padding: 0 2px;
+        line-height: 1.2;
 
     }
 
@@ -220,11 +254,12 @@ h2 {
 /* avail date section */
 
 #date {
-    color: #ff6e00;
+    color: #dc69fe;
     letter-spacing: 2px;
     font-size: 40px;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     font-weight: bold;
+    font-family: 'Sora', sans-serif;
 }
 
 
@@ -237,9 +272,10 @@ h2 {
 
 .date-container .avail {
     font-size: 20px;
-    color: #ff6e00;
+    color: #dc69fe;
     padding-left: 10px;
     font-style: italic;
+    font-family: 'Sora', sans-serif;
 
 }
 
@@ -248,7 +284,7 @@ h2 {
 
     #date {
         font-size: 20px;
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
     .date-container .avail {
@@ -261,10 +297,14 @@ h2 {
 
 .about-me p {
     line-height: 1.3;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Sora', sans-serif; */
     font-weight: 300;
-    max-width: 480px;
+    max-width: 520px;
     letter-spacing: 1px;
+    transition: all 200ms ease-in-out;
+    /* font-style: italic; */
+    font-family: 'Playfair Display', serif;
+
 }
 
 .about-me {
@@ -281,15 +321,35 @@ h2 {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding-top: 275px;
+    padding-top: 200px;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+}
+
+#about {
+    background-color: #d4cefb;
+    border-radius: 50px;
+    /* border: .2px solid rgb(154, 139, 156); */
+    width: 330px;
+    height: 410px;
 }
 
 #about img {
     max-width: 324px;
     max-height: 396px;
     border-radius: 50px;
+    border: .2px solid rgb(154, 139, 156);
+    transition: all 300ms ease-in-out;
+
+}
+
+#about:hover {
+    background-color: #dc69fe;
+}
+
+#about img:hover {
+    transform: translateY(-8px) translateX(-8px);
+    border: .2px solid black;
 }
 
 .about-head {
@@ -308,8 +368,12 @@ h2 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 180px;
+        margin-top: 100px;
         padding-top: 0;
+    }
+
+    h2 {
+        font-size: 30px;
     }
 
     .about-me #about {
@@ -322,9 +386,22 @@ h2 {
         justify-content: center;
     }
 
+
     .about-me p {
-        width: 90%;
+        /* width: 90%; */
         text-align: center;
+        background-color: #d4cefb;
+        border: 10px solid #d4cefb;
+        border-radius: 10px;
+        color: black;
+        padding: 10px 20px 60px 20px;
+        font-weight: 400;
+        /* font-family: 'Raleway', sans-serif; */
+        font-family: 'Sora', sans-serif;
+        line-height: 1.3;
+        transition: all 200ms ease-in-out;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
     }
 
     .about-head {
@@ -332,7 +409,17 @@ h2 {
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        background-color: #d4cefb;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        padding-top: 30px;
     }
+
+    .about-head h2 {
+        color: black;
+    }
+
+
 
     .about-flex {
         display: flex;
@@ -344,7 +431,15 @@ h2 {
     .about-flex .about-text {
         align-self: center;
     }
+
+    .about-head .line {
+        background-color: black;
+    }
+
+    /* #about { */
+    /* background-color: #6f45f9; */
 }
+
 
 
 /* up button */
@@ -405,7 +500,7 @@ h2 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 }
 
 .img_wrap {
@@ -480,7 +575,7 @@ h2 {
 
 .center {
     display: flex;
-    padding: 0 20px;
+    padding: 20px 20px;
     align-items: center;
 }
 
@@ -492,7 +587,7 @@ h2 {
     margin: 0 8px;
 }
 
-#skills img:last-child {
+#skills .pad {
     padding: 1px;
 }
 
@@ -536,27 +631,27 @@ h2 {
 /* footer contact section */
 
 #contact {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     background-color: #edeafb;
 }
 
 .contact-text {
-    color: #ff6e00;
+    color: black;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Spectral', serif;
     font-size: 40px;
     padding-top: 80px;
 }
 
 .email {
     border: 2px solid black;
-    border-radius: 40px;
+    border-radius: 10px;
     text-align: center;
     font-size: 30px;
     color: black;
     padding: 15px;
     background-color: #d4cefb;
-    transition: background-color 200ms ease-in-out;
+    transition: color 0.25s, border color 0.25s, box-shadow 0.25s, transform 0.25s;
 }
 
 .email-button {
@@ -566,7 +661,10 @@ h2 {
 }
 
 .email:hover {
-    background-color: #ff6e00;
+    border-color: #6f45f9;
+    color: #6f45f9;
+    box-shadow: 0 0.5em 0.5em -0.4em #6f45f9;
+    transform: translateY(-0.25em);
 }
 
 .line {
@@ -615,4 +713,19 @@ h2 {
 
 .links img:hover {
     opacity: .6;
+}
+
+@media (max-width: 800px) {
+    .line {
+        width: 100px;
+        height: 2px;
+    }
+
+    .contact-text {
+        font-size: 30px;
+    }
+
+    .email {
+        font-size: 22px;
+    }
 }

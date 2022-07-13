@@ -52,9 +52,6 @@ a:hover {
     margin: 0 10px;
 }
 
-#mainNavbar .nav-link:hover {
-    color: #ea1c2c;
-}
 
 #mainNavbar {
     font-size: 1.5rem;
@@ -70,6 +67,7 @@ a:hover {
 
 
 
+
 .nav-list a {
     transition: all 200ms;
 }
@@ -79,18 +77,23 @@ a:hover {
 }
 
 
-.nav-list a:hover {
+/* .nav-list a:hover {
     /* color: #ff6e00; */
-    /* border-color: #fdff87; */
-    /* color: #6f45f9; */
-    border-bottom: 2px solid #fdff7a;
-    color: #dc69fe;
-    box-shadow: 0 0.5em 0.5em -0.4em #fdff7a;
+/* border-color: #fdff87; */
+/* color: #6f45f9; */
+/* border-bottom: 2px solid #fdff7a; */
+/* color: #dc69fe; */
+/* box-shadow: 0 0.5em 0.5em -0.4em #fdff7a; */
 
-}
 
-.nav-list a:active {
-    border-bottom: 2px solid #ff6e00;
+@media (min-width: 767px) {
+    #mainNavbar .nav-link:hover {
+
+        border-bottom: 1px solid #d4cefb;
+        padding-top: 4px;
+        padding-bottom: 0;
+
+    }
 }
 
 
@@ -101,7 +104,7 @@ a:hover {
         padding: 10px 2px;
         text-align: center;
         letter-spacing: 2px;
-        background-color: black;
+        background-image: linear-gradient(90deg, #f3f700, #b91ee9);
         padding: 5px 10px;
     }
 
@@ -116,6 +119,10 @@ a:hover {
 
     #mainNavbar .nav-link {
         font-size: 1.5rem;
+    }
+
+    #mainNavbar .nav-link:hover {
+        color: black;
     }
 
 }
@@ -331,7 +338,7 @@ h2 {
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding-top: 200px;
+    padding-top: 300px;
     margin-top: 100px;
     margin-bottom: 50px;
 }
@@ -378,8 +385,9 @@ h2 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 100px;
-        padding-top: 0;
+        margin-top: 20px;
+        padding-top: 80px;
+        margin-bottom: 0;
     }
 
     h2 {
@@ -562,8 +570,8 @@ h2 {
     }
 
     #projects {
-        padding-top: 70px;
-        margin-bottom: 100px;
+        padding-top: 100px;
+        margin-bottom: 20px;
     }
 
     .image-desc {
@@ -632,7 +640,7 @@ h2 {
 
 @media screen and (max-width: 800px) {
     #skills {
-        padding-top: 30px;
+        padding-top: 80px;
         padding-bottom: 100px;
         background-image: none;
     }

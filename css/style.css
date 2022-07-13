@@ -42,41 +42,40 @@ a {
 
 }
 
-.navbar {
-    top: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 20px 15px;
-    z-index: 100;
-    width: 100%;
+a:hover {
+    color: white;
 }
 
-.nav-list li {
-    display: inline-block;
-    padding: 0 25px;
+#mainNavbar .nav-link {
+    color: #edeafb;
+    font-size: 2rem;
+    margin: 0 10px;
 }
 
-.nav-list ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
+#mainNavbar .nav-link:hover {
+    color: #ea1c2c;
 }
 
-.nav-list li a {
-    display: block;
-    color: #FAF9F6;
-    /* color: #ffd45c; */
-    font-size: 36px;
-    /* font-family: 'Questrial', sans-serif; */
-    font-family: 'Sora', sans-serif;
-    /* border-bottom: 2px solid #d04cf9; */
-    padding: 0px 5px;
-    /* border-radius: 10px; */
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 200;
+    /* padding: 0; */
+    /* margin: 0; */
 }
+
+.navbar.scrolled {
+    background-image: linear-gradient(90deg, #f3f700, #b91ee9);
+    transition: background 500ms;
+}
+
+
 
 .nav-list a {
     transition: all 200ms;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(237, 234, 251)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 
@@ -95,28 +94,29 @@ a {
 }
 
 
-@media screen and (max-width: 800px) {
+@media (max-width: 767px) {
 
     .navbar {
-        justify-content: center;
+        justify-content: end;
         padding: 10px 2px;
         text-align: center;
         letter-spacing: 2px;
+        background-color: black;
+        padding: 5px 10px;
     }
 
-    .nav-list li a {
-        font-size: 22px;
-        margin: 15px 2px;
-        border-bottom: 1px solid #dc69fe;
-        padding: 0 0 3px 0;
-        letter-spacing: 3;
+    #mainNavbar .nav-item {
+        border-bottom: 1px solid #edeafb;
 
     }
 
-    .nav-list li {
-        padding: 0;
+    #mainNavbar .nav-item:last-child {
+        border-bottom: none;
     }
 
+    #mainNavbar .nav-link {
+        font-size: 1.5rem;
+    }
 
 }
 
@@ -125,7 +125,8 @@ a {
 /* header section */
 
 p {
-    font-family: 'Questrial', sans-serif;
+    /* font-family: 'Questrial', sans-serif; */
+    margin-bottom: 0;
 }
 
 h1 {
@@ -134,7 +135,7 @@ h1 {
     justify-content: center;
     color: #47FCA1;
     font-size: 70px;
-    margin-top: 180px;
+    margin-top: 300px;
     text-align: center;
     animation: slideMe .4s ease-in;
     /* font-family: 'Raleway', sans-serif; */
@@ -172,11 +173,15 @@ h1 {
 
 
 h2 {
-    font-family: 'Spectral', serif;
+    /* font-family: 'Spectral', serif; */
     font-size: 40px;
     color: #d4cefb;
+
     letter-spacing: 2px;
     text-transform: uppercase;
+    font-family: var(--bs-body-font-family);
+    font-weight: 400;
+    margin-bottom: 0;
 
 }
 
@@ -228,15 +233,13 @@ h2 {
 
 
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
 
     h1 {
         font-size: 45px;
-        margin-top: 60px;
+        margin-top: 150px;
         padding: 0 2px;
         line-height: 1.2;
-
-
     }
 
     .heading-text {
@@ -254,12 +257,14 @@ h2 {
 /* avail date section */
 
 #date {
-    color: #dc69fe;
+    /* color: #dc69fe; */
     letter-spacing: 2px;
     font-size: 40px;
-    /* font-family: 'Montserrat', sans-serif; */
-    font-weight: bold;
-    font-family: 'Sora', sans-serif;
+    color: #edeafb;
+    font-weight: 300;
+    /* font-family: 'Sora', sans-serif; */
+    font-family: var(--bs-body-font-family);
+
 }
 
 
@@ -271,11 +276,14 @@ h2 {
 }
 
 .date-container .avail {
-    font-size: 20px;
-    color: #dc69fe;
+    font-size: 30px;
+    /* color: #dc69fe; */
     padding-left: 10px;
     font-style: italic;
-    font-family: 'Sora', sans-serif;
+    font-weight: 200;
+    /* font-family: 'Sora', sans-serif; */
+    color: #edeafb;
+    font-family: var(--bs-body-font-family);
 
 }
 
@@ -283,12 +291,12 @@ h2 {
 @media screen and (max-width: 800px) {
 
     #date {
-        font-size: 20px;
+        font-size: 30px;
         margin-top: 20px;
     }
 
     .date-container .avail {
-        font-size: 16px;
+        font-size: 20px;
     }
 }
 
@@ -304,6 +312,8 @@ h2 {
     transition: all 200ms ease-in-out;
     /* font-style: italic; */
     font-family: 'Playfair Display', serif;
+    color: white;
+    /* font-family: var(--bs-body-font-family); */
 
 }
 
@@ -363,7 +373,7 @@ h2 {
     padding-left: 50px;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
     #about-container {
         flex-direction: column;
         justify-content: center;
@@ -391,6 +401,7 @@ h2 {
         /* width: 90%; */
         text-align: center;
         background-color: #d4cefb;
+
         border: 10px solid #d4cefb;
         border-radius: 10px;
         color: black;
@@ -521,8 +532,17 @@ h2 {
     opacity: 0;
     color: #FAF9F6;
     background: rgba(28, 30, 31, 0.82);
-    padding-top: 100px;
+    padding-top: 90px;
     transition: all 0.5s;
+    /* font-family: 'Sora', sans-serif; */
+    font-family: var(--bs-body-font-family);
+    font-weight: 200;
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.long {
+    padding-top: 16%;
 }
 
 .img_wrap:hover .image-desc {
@@ -530,7 +550,7 @@ h2 {
     opacity: 1;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
 
     .project-links img {
         width: 320px;
@@ -544,12 +564,16 @@ h2 {
     #projects {
         padding-top: 70px;
         margin-bottom: 100px;
-        font-size: 30px;
     }
 
     .image-desc {
-        margin-bottom: 8px;
-        padding-top: 80px;
+        padding-top: 75px;
+        font-size: 2.4rem;
+    }
+
+
+    .long {
+        padding-top: 18%;
     }
 
 }
@@ -559,7 +583,7 @@ h2 {
 /* skills sections */
 
 #skills {
-    font-family: 'Montserrat', sans-serif;
+
     font-size: 40px;
     background-image: url('../images/skills.jpg');
     background-size: 100%;
@@ -567,6 +591,7 @@ h2 {
     padding-bottom: 400px;
     padding-top: 100px;
     background-repeat: no-repeat;
+    font-weight: 200;
 }
 
 #skills p {
@@ -633,12 +658,12 @@ h2 {
 #contact {
     padding-bottom: 30px;
     background-color: #edeafb;
+    /* background: white; */
 }
 
 .contact-text {
     color: black;
     text-align: center;
-    font-family: 'Spectral', serif;
     font-size: 40px;
     padding-top: 80px;
 }
@@ -650,6 +675,7 @@ h2 {
     font-size: 30px;
     color: black;
     padding: 15px;
+    font-weight: 400;
     background-color: #d4cefb;
     transition: color 0.25s, border color 0.25s, box-shadow 0.25s, transform 0.25s;
 }
@@ -671,6 +697,7 @@ h2 {
     width: 135px;
     height: 4px;
     background-color: #d4cefb;
+
     margin-top: 10px;
 }
 

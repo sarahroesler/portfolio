@@ -1,8 +1,10 @@
 # portfolio
  
  
- Hello and Welcome to my porfolio website!
+ Hello and wlcome to my porfolio website!
  
- This site is still a work in progress as I am working on the functionality for different screens and other minor changes,
+ This site is at current completion. I will be making minor updates in the future and will be adding future projects.
  
- Enjoy.
+ Thanks for visiting!
+ 
+ Sarah

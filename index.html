@@ -167,39 +167,8 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
 
-  <script>
-    const btnScrollToTop = document.querySelector("#btnScrollToTop");
+  <script src="./js/app.js"></script>
 
-    btnScrollToTop.addEventListener("click", function () {
-      window.scrollTo(0, 0);
-    })
-  </script>
-
-  <script>
-    $('.navbar-nav>li>a').on('click', function () {
-      $('.navbar-collapse').collapse('hide');
-    });
-  </script>
-
-  <script>
-    $(function () {
-      $(document).scroll(function () {
-        var $nav = $("#mainNavbar");
-        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-      });
-    });
-  </script>
-
-  <script>
-    const date = document.getElementById("date");
-    const currentDate = new Date();
-    const month = currentDate.getMonth() + 1;
-    const monthName = currentDate.toLocaleString('en-US', { month: 'long' });
-    const day = currentDate.getDate();
-    const fullDate = monthName + '  ' + day;
-
-    date.innerHTML = fullDate;
-  </script>
 
 </body>
 

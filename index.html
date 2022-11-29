@@ -17,7 +17,7 @@
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap"
     rel="stylesheet">
 
-  <title>Sarah Roesler | Web Developer | Portfolio</title>
+  <title>Sarah Roesler | Web Developer</title>
 </head>
 
 <body>
@@ -44,11 +44,51 @@
     </div>
   </nav>
   <button id="btnScrollToTop"><img src="./images/up.png"></button>
-  <h1>Hi, I'm Sarah Roesler.</h1>
+  <h1>Hi, I'm&nbsp;<span style="color: #eb8565"> Sarah Roesler.</span></h1>
   <h2 class="heading-text">I am a Texas based Web Developer.</h2>
-  <div class="date-container">
-    <span id="date"></span>
-    <p class="avail">Available for Work</p>
+  <div class="mobile-title">
+    <p class="small-title">Hi, I'm</p>
+    <p>Sarah Roesler.</p>
+    <p class="small-title">I'm a Texas based Web Developer.</p>
+  </div>
+  <!-- this section is extremely excessive, i know i could have used javascript, classes or an image haha-->
+  <div class="spacing">
+    <div class="person">
+      <p>
+        1&nbsp;&nbsp;
+        <span style="color: #b583d7">class</span> <span style="color: #ebbc60"> Person </span><span
+          style="color: #80d1f4">{</span>
+      </p>
+      <p>
+        2&nbsp;&nbsp;&nbsp;&nbsp&nbsp;
+        <span style="color: #b583d7">constructor</span><span style="color: #80d1f4">(){</span>
+      </p>
+      <p>
+        3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span style="color: #80d1f4">this.</span>name <span style="color: #80d1f4">= "</span><span
+          style="color: #bfe687">Sarah Roesler</span><span style="color: #80d1f4">";</span>
+      </p>
+      <p>
+        4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span style="color: #80d1f4">this.</span>traits <span style="color: #80d1f4">=</span> <span
+          style="color: #eb8565">[</span><span style="color: #80d1f4">"</span><span
+          style="color: #bfe687">DESIGN</span><span style="color: #80d1f4">", "</span><span
+          style="color: #bfe687">DEV</span><span style="color: #80d1f4">"</span><span
+          style="color: #eb8565">]</span><span style="color: #80d1f4"><span style="color: #80d1f4">;</span></span>
+      </p>
+      <p>
+        5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span style="color: #80d1f4">this.</span>location <span style="color: #80d1f4">= "</span><span
+          style="color: #bfe687">Dallas, Tx</span><span style="color: #80d1f4">"";</span>
+      </p>
+      <p>
+        6&nbsp;&nbsp;&nbsp;&nbsp&nbsp;
+        <span style="color: #80d1f4">}</span>
+      </p>
+      <p>
+        7&nbsp;&nbsp;<span style="color: #80d1f4">}</span>
+      </p>
+    </div>
   </div>
   <div id="about-container">
     <div class="about-me">
@@ -60,10 +100,10 @@
           <h2>About Me</h2>
           <div class="line"></div>
         </div>
-        <p class="about-text">Hello! My name is Sarah and I am a Front-End Developer in Dallas, Texas. I enjoy creating
+        <p class="about-text">Hello! My name is Sarah and I am a Web Developer living in Dallas, Texas. I enjoy creating
           beautiful, interactive spaces that live on the web. <br><br>
-          My interest in Web Development started in 2018, and in 2022 I made the move from NYC to Dallas to pursue
-          coding full-time.</p>
+          My interest in software development began during the 2020 pandemic and I've been hooked ever since.
+        </p>
       </div>
     </div>
   </div>
@@ -98,34 +138,77 @@
     </div>
   </div>
   <div id="skills">
-    <div class="flex">
-      <h2>SKILLS</h2>
-      <div class="line"></div>
+    <div class="myCard">
+      <div class="flex">
+        <h2>Languages</h2>
+        <!-- <div class="line"></div> -->
+      </div>
+      <hr>
+      <div class="skill-list">
+        <div class="center">
+          <img src="./images/html.png">
+          <p>HTML</p>
+        </div>
+        <div class="center">
+          <img src="./images/css-3.png" class="bigger">
+          <p>CSS</p>
+        </div>
+        <div class="center">
+          <img src="./images/javascript.png">
+          <p>JavaScript </p>
+        </div>
+
+        <div class="center">
+          <img src="./images/react.png" class="pad">
+          <p>React</p>
+        </div>
+
+      </div>
     </div>
-    <div class="skill-list">
-      <div class="center">
-        <img src="./images/html.png">
-        <p>HTML</p>
+    <div class="myCard">
+      <div class="flex">
+        <h2>Tools</h2>
+        <!-- <div class="line"></div> -->
       </div>
-      <div class="center">
-        <img src="./images/css-3.png" class="bigger">
-        <p>CSS</p>
+      <hr>
+      <div class="skill-list">
+        <div class="center">
+          <img src="./images/git.png">
+          <p>Git</p>
+        </div>
+        <div class="center">
+          <img src="./images/bootstrap.png" class="pad">
+          <p>Bootstrap</p>
+        </div>
+        <div class="center">
+          <img src="./images/node.png" class="pad">
+          <p>Node</p>
+        </div>
+        <div class="center">
+          <img src="./images/express.png" class="pad">
+          <p>Express</p>
+        </div>
+        <div class="center">
+          <img src="./images/mongo.png" class="pad">
+          <p>MongoDB</p>
+        </div>
       </div>
-      <div class="center">
-        <img src="./images/javascript.png">
-        <p>JavaScript </p>
+    </div>
+    <div class="myCard">
+      <div class="flex">
+        <h2>Learning</h2>
+        <!-- <div class="line"></div> -->
       </div>
-      <div class="center">
-        <img src="./images/git.png">
-        <p>Git</p>
-      </div>
-      <div class="center">
-        <img src="./images/react.png" class="pad">
-        <p>React</p>
-      </div>
-      <div class="center">
-        <img src="./images/bootstrap.png" class="pad">
-        <p>Bootstrap</p>
+      <hr>
+      <div class="skill-list">
+        <div class="center">
+          <img src="./images/python.png">
+          <p>Python</p>
+        </div>
+        <div class="center">
+          <img src="./images/typescript.png" class="">
+          <p>Typescript</p>
+        </div>
       </div>
     </div>
   </div>
@@ -174,3 +257,10 @@
 
 
 </html>
+
+
+
+<!-- <div class="date-container">
+    <span id="date"></span>
+    <p class="avail">available for work</p>
+  </div> -->

@@ -23,11 +23,11 @@ $(function () {
 
 //date//
 
-const date = document.getElementById("date");
-const currentDate = new Date();
-const month = currentDate.getMonth() + 1;
-const monthName = currentDate.toLocaleString('en-US', { month: 'long' });
-const day = currentDate.getDate();
-const fullDate = monthName + '  ' + day;
+// const date = document.getElementById("date");
+// const currentDate = new Date();
+// const month = currentDate.getMonth() + 1;
+// const monthName = currentDate.toLocaleString('en-US', { month: 'short' }).toUpperCase();
+// const day = currentDate.getDate();
+// const fullDate = monthName + '  ' + day;
 
-date.innerHTML = fullDate;
+// date.innerHTML = fullDate;

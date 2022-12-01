@@ -101,10 +101,6 @@ a:hover {
         padding: 5px 10px;
     }
 
-    #mainNavbar .nav-item {
-        /* border-bottom: 1px solid white; */
-
-    }
 
     #mainNavbar .nav-item:last-child {
         border-bottom: none;
@@ -121,6 +117,48 @@ a:hover {
         color: black;
     }
 
+}
+
+/* avail date section */
+
+#date {
+
+    /* letter-spacing: 2px; */
+    font-size: 25px;
+    font-weight: 400;
+    font-family: var(--bs-body-font-family);
+
+}
+
+
+.date-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    /* animation: slide-up .8s ease-in; */
+    flex-direction: column;
+    line-height: 1;
+    padding-left: 20px;
+    color: #eb8565;
+
+}
+
+.date-container .avail {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    color: white;
+    font-family: var(--bs-body-font-family);
+
+}
+
+
+@media (max-width: 810px) {
+
+
+    .date-container {
+        display: none;
+    }
 }
 
 
@@ -254,55 +292,6 @@ h2 {
     }
 
 }
-
-/* avail date section */
-/* 
-#date {
-
-    letter-spacing: 2px;
-    font-size: 40px;
-    color: #edeafb;
-    font-weight: 300;
-    font-family: var(--bs-body-font-family);
-
-}
-
-
-.date-container {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    animation: slide-up .8s ease-in;
-}
-
-.date-container .avail {
-    font-size: 30px;
-    padding-left: 10px;
-    font-style: italic;
-    font-weight: 200;
-    color: #edeafb;
-    font-family: var(--bs-body-font-family);
-
-}
-
-
-@media (max-width: 800px) {
-
-    #date {
-        font-size: 25px;
-        margin-top: 20px;
-    }
-
-    .date-container .avail {
-        font-size: 20px;
-        padding: 0;
-    }
-
-    .date-container {
-        flex-direction: column;
-        align-items: center;
-    }
-} */
 
 /* person section */
 

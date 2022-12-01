@@ -395,6 +395,12 @@ h2 {
     padding-left: 50px;
 }
 
+@media (min-width: 1023px) {
+    #about-container {
+        padding-top: 210px;
+    }
+}
+
 @media (max-width: 800px) {
     #about-container {
         flex-direction: column;

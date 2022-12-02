@@ -6,6 +6,15 @@ btnScrollToTop.addEventListener("click", function () {
     window.scrollTo(0, 0);
 })
 
+window.onscroll = function () { scrollFunction() };
+function scrollFunction() {
+    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+        btnScrollToTop.style.display = "block";
+    } else {
+        btnScrollToTop.style.display = "none";
+    }
+}
+
 //navbar collapse//
 
 $('.navbar-nav>li>a').on('click', function () {

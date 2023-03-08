@@ -397,7 +397,8 @@ h2 {
 
 @media (min-width: 1023px) {
     #about-container {
-        padding-top: 210px;
+        padding-top: 120px;
+        margin-top: 90px;
     }
 }
 

@@ -572,6 +572,10 @@ h2 {
     line-height: 1.2;
 }
 
+.xlong{
+    padding-top: 10%;
+}
+
 .long {
     padding-top: 16%;
 }
